@@ -17,7 +17,7 @@ x Il prezzo del biglietto è definito in base ai km (0.21 $ al km)
 
 let totaleKm = prompt("Quanti chilometri vuoi percorrere?");
 let etàUtente = prompt("Qual è l'età del passeggero?");
-let totaleEuro = (totaleKm * 0.21);
+let totaleEuro = (totaleKm * 0.21).toFixed(2);
 
 
 if(etàUtente < 18) {
@@ -37,7 +37,7 @@ if(etàUtente < 18) {
 
     console.log(`Hai scelto di percorrere ${totaleKm} km.
     Il passeggero risulta essere Over 65 avendo ${etàUtente} anni.
-    Quindi il subtotale da pagare sarebbe di ${totaleEuro.toFixed(2)} euro.
+    Quindi il subtotale da pagare sarebbe di ${totaleEuro} euro.
     Ma applicando lo sconto del 40% il totale sarà di ${(totaleEuro - ((totaleEuro * 40) / 100)).toFixed(2)} euro.`);
 
 }
