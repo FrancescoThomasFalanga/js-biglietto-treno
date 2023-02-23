@@ -22,20 +22,20 @@ let totaleEuro = (totaleKm * 0.21).toFixed(2);
 
 if(etàUtente < 18) {
 
-    console.log(`Hai scelto di percorrere ${totaleKm} km.
+    document.writeln(`Hai scelto di percorrere ${totaleKm} km.
     Il passeggero risulta essere minorenne avendo ${etàUtente} anni.
     Quindi il subtotale da pagare sarebbe di ${totaleEuro} euro.
     Ma applicando lo sconto del 20% il totale sarà di ${(totaleEuro - ((totaleEuro * 20) / 100)).toFixed(2)} euro.`);
 
 } else if(etàUtente >= 18 && etàUtente <= 64) {
 
-    console.log(`Hai scelto di percorrere ${totaleKm} km.
+    document.writeln(`Hai scelto di percorrere ${totaleKm} km.
     Il passeggero risulta avere un'età compresa fra i 18 e i 64 anni, avendo ${etàUtente} anni.
     Quindi il totale da pagare è di ${totaleEuro} euro.`);
 
 } else {
 
-    console.log(`Hai scelto di percorrere ${totaleKm} km.
+    document.writeln(`Hai scelto di percorrere ${totaleKm} km.
     Il passeggero risulta essere Over 65 avendo ${etàUtente} anni.
     Quindi il subtotale da pagare sarebbe di ${totaleEuro} euro.
     Ma applicando lo sconto del 40% il totale sarà di ${(totaleEuro - ((totaleEuro * 40) / 100)).toFixed(2)} euro.`);
